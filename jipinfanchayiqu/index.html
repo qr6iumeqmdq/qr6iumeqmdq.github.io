@@ -1,0 +1,1050 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>极品反差一区-内容导航与选题观察</title>
+<meta name="description" content="极品反差一区是一个聚焦强反差题材的内容导航与观察站，梳理分区规则、更新记录、创作者访谈与体验指南，帮你在复杂的条目里分清事实、回应与推测，找到真正值得看的部分。">
+<meta name="keywords" content="极品反差一区">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1a2e'/%3E%3Ccircle cx='24' cy='32' r='12' fill='%23e8503a'/%3E%3Ccircle cx='40' cy='32' r='12' fill='%23f2b134' fill-opacity='.85'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "极品反差一区",
+  "description": "强反差题材的内容导航与选题观察站，记录分区规则、条目更新与创作者说法。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "反差向条目里的“一区”“二区”到底怎么分？",
+      "acceptedAnswer": {"@type": "Answer", "text": "按 11 月 3 日维护组公布的分区表，一区收强度高、剪辑密度大的成片，二区放花絮、未剪素材和实验性短篇。分区依据是成片形态，不是题材热度。"}
+    },
+    {
+      "@type": "Question",
+      "name": "同一组素材为什么会在两个分区同时出现？",
+      "acceptedAnswer": {"@type": "Answer", "text": "合辑条目允许交叉挂载。10 月 22 日上线的《冷启动·上下》就同时挂在一区和二区，区别是一区版本 4 分 12 秒，二区版本 9 分 40 秒，多出三段旁白。"}
+    },
+    {
+      "@type": "Question",
+      "name": "条目页标注的“重剪版”可信吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "看版本号与剪辑署名。署名“K-17”的重剪版在 10 月 14 日、11 月 1 日各有一版，两版时长相差 51 秒，片尾水印位置也不同，能对上才可信。"}
+    },
+    {
+      "@type": "Question",
+      "name": "为什么有的条目播放量高却没有评论？",
+      "acceptedAnswer": {"@type": "Answer", "text": "多见于题材偏门或时长超过 20 分钟的条目。11 月 5 日的《静场》播放量 3.2 万，评论 6 条，因为讨论集中在外部社群，站内评论区没有承接。"}
+    },
+    {
+      "@type": "Question",
+      "name": "创作者标注的“未删减”要怎样核对？",
+      "acceptedAnswer": {"@type": "Answer", "text": "对比片头 8 秒的黑场时长和片尾署名条。删减版一般黑场 3 秒内，未删减版保留 8 秒完整黑场，并带剪辑师英文署名。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#1b1a2e;
+  --ink-2:#33314d;
+  --muted:#6b6880;
+  --line:#e2dfe9;
+  --bg:#f7f5f1;
+  --card:#ffffff;
+  --red:#c53b28;
+  --amber:#d98a19;
+  --teal:#1f6f6b;
+  --radius:10px;
+  --shadow:0 1px 2px rgba(27,26,46,.06),0 6px 18px rgba(27,26,46,.06);
+  --gap:20px;
+  --ann-h:38px;
+  --head-h:60px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--ann-h) + var(--head-h) + 10px)}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  font-size:16px;line-height:1.75;
+}
+h1,h2,h3,h4{line-height:1.35;margin:0}
+a{color:inherit}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* 吸顶公告条 + 页头 */
+.sticky-top{position:sticky;top:0;z-index:60}
+.annbar{
+  background:var(--ink);color:#efece4;font-size:13.5px;height:var(--ann-h);
+  display:flex;align-items:center;overflow:hidden;
+}
+.annbar .wrap{display:flex;align-items:center;gap:10px;width:100%}
+.annbar b{color:#f2b134;font-weight:700;white-space:nowrap}
+.annbar span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.annbar a{margin-left:auto;color:#f2b134;text-decoration:none;border-bottom:1px solid rgba(242,177,52,.5);white-space:nowrap}
+.site-head{
+  background:rgba(247,245,241,.96);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);height:var(--head-h);
+}
+.site-head .wrap{display:flex;align-items:center;gap:18px;height:100%}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;flex-shrink:0}
+.brand svg{display:block}
+.brand-name{font-weight:800;font-size:17.5px;letter-spacing:.3px}
+.nav-toggle{
+  display:none;margin-left:auto;background:none;border:1px solid var(--line);
+  border-radius:8px;padding:6px 10px;font-size:14px;cursor:pointer;color:var(--ink);
+}
+.nav-toggle:focus-visible,.brand:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--teal);outline-offset:2px;border-radius:4px}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+.main-nav a{
+  text-decoration:none;font-size:14.5px;padding:6px 9px;border-radius:7px;color:var(--ink-2);white-space:nowrap;
+}
+.main-nav a:hover{background:#ece8df;color:var(--red)}
+.head-entry{
+  margin-left:auto;background:var(--red);color:#fff;text-decoration:none;
+  font-size:14px;padding:7px 14px;border-radius:8px;font-weight:600;white-space:nowrap;
+}
+.head-entry:hover{background:#a92f1e}
+
+/* 首屏 */
+.hero{padding:44px 0 34px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--teal);font-weight:700;letter-spacing:1px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--teal)}
+h1{font-size:clamp(28px,4.6vw,46px);font-weight:900;letter-spacing:-.5px;margin:12px 0 14px}
+.hero-desc{color:var(--ink-2);font-size:16.5px;max-width:560px;margin:0 0 22px}
+.hero-desc em{font-style:normal;background:linear-gradient(transparent 62%,#f2b13455 62%);padding:0 2px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;text-decoration:none;padding:10px 20px;border-radius:9px;font-weight:700;font-size:15px;
+  transition:transform .18s ease;
+}
+.btn-primary{background:var(--ink);color:#fff}
+.btn-ghost{border:1.5px solid var(--ink);color:var(--ink);background:transparent}
+.btn:hover{transform:translateY(-2px)}
+.hero-stats{display:flex;gap:26px;margin-top:24px;flex-wrap:wrap}
+.hero-stats div{font-size:13px;color:var(--muted)}
+.hero-stats b{display:block;font-size:22px;color:var(--ink);font-weight:800}
+.hero-art{position:relative;height:300px}
+.hero-art svg{width:100%;height:100%;display:block}
+.caption-note{position:absolute;left:8%;bottom:0;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 11px;font-size:12.5px;color:var(--muted);box-shadow:var(--shadow)}
+
+/* 通用板块 */
+.sec{padding:34px 0}
+.sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:20px;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.sec-head h2{font-size:22px;font-weight:800;letter-spacing:.2px}
+.sec-head .sub{font-size:13.5px;color:var(--muted)}
+.sec-head .more{margin-left:auto;font-size:13.5px;color:var(--teal);text-decoration:none;border-bottom:1px dashed var(--teal)}
+.layout-main{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start}
+main{min-width:0}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ov-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.ov-card h3{font-size:16px;margin-bottom:8px}
+.ov-card p{margin:0;font-size:14px;color:var(--ink-2)}
+.ov-card .tag{display:inline-block;font-size:12px;color:var(--teal);font-weight:700;margin-bottom:6px}
+
+/* 精选网格卡片 */
+.pick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.pick{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .18s ease}
+.pick:hover{transform:translateY(-3px)}
+.pick img{width:100%;height:150px;object-fit:cover;display:block}
+.pick-body{padding:14px 16px 16px}
+.pick-body h3{font-size:16.5px;margin-bottom:6px}
+.pick-body p{margin:0 0 10px;font-size:13.5px;color:var(--ink-2)}
+.meta{font-size:12.5px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
+.meta b{color:var(--red);font-weight:700}
+
+/* 最新更新紧凑列表 */
+.up-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+.up-list li{display:flex;gap:14px;padding:12px 16px;border-bottom:1px solid var(--line);font-size:14px;align-items:baseline}
+.up-list li:last-child{border-bottom:0}
+.up-list time{color:var(--teal);font-size:13px;font-weight:700;white-space:nowrap}
+.up-list span{color:var(--ink-2)}
+.up-list em{font-style:normal;color:var(--muted);font-size:12.5px;margin-left:auto;white-space:nowrap}
+
+/* 分类标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:10px}
+.tag-index a{
+  text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:99px;
+  padding:7px 15px;font-size:14px;color:var(--ink-2);transition:all .16s ease;
+}
+.tag-index a:hover{border-color:var(--red);color:var(--red);transform:translateY(-2px)}
+.tag-index a b{color:var(--muted);font-weight:500;font-size:12.5px;margin-left:5px}
+
+/* 深度解析 */
+.deep{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow)}
+.deep .lead{font-size:15.5px;color:var(--ink-2);border-left:3px solid var(--amber);padding-left:14px;margin:0 0 20px}
+.deep h3{font-size:18px;margin:24px 0 10px;padding-left:12px;border-left:4px solid var(--red)}
+.deep h3:first-of-type{margin-top:4px}
+.deep p{margin:0 0 12px;font-size:15px;color:var(--ink-2)}
+.deep ul{margin:0 0 14px;padding-left:20px;font-size:14.5px;color:var(--ink-2)}
+.deep li{margin-bottom:5px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:14px 0 18px;font-size:14px}
+.compare>div{padding:13px 15px}
+.compare .ch{font-weight:800;font-size:13px;letter-spacing:.5px}
+.compare .a{background:#fdf3ee;border-right:1px solid var(--line)}
+.compare .b{background:#eef6f4}
+.compare .ch.a{color:var(--red)}
+.compare .ch.b{color:var(--teal)}
+.quote-card{background:#f2efe8;border-radius:8px;padding:15px 18px;font-size:14.5px;color:var(--ink-2);margin:14px 0}
+.quote-card cite{display:block;margin-top:8px;font-style:normal;font-size:12.5px;color:var(--muted)}
+
+/* 体验指南编号步骤 */
+.steps{counter-reset:step;list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.steps li{
+  counter-increment:step;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:15px 18px 15px 58px;position:relative;box-shadow:var(--shadow);
+}
+.steps li::before{
+  content:counter(step);position:absolute;left:16px;top:15px;width:28px;height:28px;border-radius:50%;
+  background:var(--ink);color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;
+}
+.steps h3{font-size:15.5px;margin-bottom:4px}
+.steps p{margin:0;font-size:13.5px;color:var(--ink-2)}
+
+/* FAQ */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;padding:13px 40px 13px 16px;font-weight:700;font-size:15px;position:relative;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:11px;font-size:20px;color:var(--red);font-weight:400}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{padding:0 16px 15px;font-size:14px;color:var(--ink-2)}
+.faq .ans p{margin:0}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.cmt-top{display:flex;align-items:center;gap:9px;margin-bottom:6px;font-size:13px}
+.ava{width:26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12.5px;flex-shrink:0}
+.cmt-top .who{font-weight:700}
+.cmt-top .when{color:var(--muted);margin-left:auto}
+.cmt p{margin:0;font-size:14px;color:var(--ink-2)}
+.cmt .star{color:var(--amber);letter-spacing:1px}
+
+/* 相关资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.news{border:1px solid var(--line);border-radius:var(--radius);padding:16px;background:var(--card)}
+.news time{font-size:12.5px;color:var(--teal);font-weight:700}
+.news h3{font-size:15.5px;margin:6px 0 6px}
+.news p{margin:0;font-size:13.5px;color:var(--ink-2)}
+
+/* 榜单 */
+.rank{list-style:none;margin:0;padding:0;counter-reset:rk}
+.rank li{display:flex;gap:14px;align-items:baseline;padding:11px 4px;border-bottom:1px dashed var(--line);font-size:14.5px}
+.rank li:last-child{border-bottom:0}
+.rank li::before{counter-increment:rk;content:counter(rk);font-weight:900;font-size:17px;color:#c9c4d6;width:24px;flex-shrink:0}
+.rank li:nth-child(-n+3)::before{color:var(--red)}
+.rank .rk-name{font-weight:700;color:var(--ink)}
+.rank .rk-meta{margin-left:auto;color:var(--muted);font-size:12.5px;white-space:nowrap}
+
+/* 时间线 */
+.timeline{list-style:none;margin:0;padding:0 0 0 18px;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 16px 16px;font-size:14px;color:var(--ink-2)}
+.timeline li::before{content:"";position:absolute;left:-25px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--amber);border:2px solid var(--bg)}
+.timeline b{color:var(--ink);display:block;font-size:14.5px}
+.timeline time{font-size:12.5px;color:var(--teal);font-weight:700}
+
+/* 相关推荐标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:10px}
+.rec-tags a{text-decoration:none;font-size:13.5px;padding:7px 13px;border-radius:7px;background:#efece4;color:var(--ink-2);border:1px solid transparent}
+.rec-tags a:hover{border-color:var(--teal);color:var(--teal)}
+.rec-tags a::before{content:"#[ ";color:var(--muted)}
+.rec-tags a::after{content:" ]";color:var(--muted)}
+
+/* 用户互动栏目 */
+.poll-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.poll,.submit-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.poll h3,.submit-box h3{font-size:16px;margin-bottom:10px}
+.poll-opt{display:grid;gap:8px}
+.poll-opt button{
+  text-align:left;background:#f7f5f1;border:1px solid var(--line);border-radius:8px;padding:9px 12px;
+  font-size:14px;cursor:pointer;color:var(--ink-2);position:relative;overflow:hidden;font-family:inherit;
+}
+.poll-opt button span{position:relative;z-index:2}
+.poll-opt button .bar{position:absolute;left:0;top:0;bottom:0;background:#f2b13455;width:0;transition:width .5s ease;z-index:1}
+.poll-opt button:hover{border-color:var(--amber)}
+.poll-hint{font-size:12.5px;color:var(--muted);margin-top:10px}
+.submit-box form{display:grid;gap:9px}
+.submit-box label{font-size:13px;color:var(--muted)}
+.submit-box input,.submit-box textarea{
+  font-family:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:7px;background:#fbfaf8;color:var(--ink);
+}
+.submit-box textarea{resize:vertical;min-height:60px}
+.submit-box button{
+  justify-self:start;background:var(--teal);color:#fff;border:0;border-radius:8px;padding:8px 18px;
+  font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;
+}
+.submit-box button:hover{background:#175955}
+.form-msg{font-size:13px;color:var(--teal);min-height:20px}
+
+/* 侧栏 */
+.sidebar{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 16px);display:grid;gap:18px}
+.side-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+.side-box h3{font-size:15px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side-search{display:flex;gap:6px}
+.side-search input{
+  flex:1;min-width:0;font-family:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:7px;background:#fbfaf8;
+}
+.side-search button{
+  background:var(--ink);color:#fff;border:0;border-radius:7px;padding:0 13px;font-size:14px;cursor:pointer;font-family:inherit;
+}
+.search-result{font-size:13px;margin-top:9px;color:var(--ink-2);min-height:18px}
+.search-result b{color:var(--red)}
+.side-nav{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.side-nav a{
+  display:block;text-decoration:none;font-size:13.5px;padding:6px 9px;border-radius:6px;color:var(--ink-2);border-left:3px solid transparent;
+}
+.side-nav a:hover{background:#f2efe8}
+.side-nav a.active{background:#f2efe8;border-left-color:var(--red);color:var(--red);font-weight:700}
+.side-note{font-size:13px;color:var(--ink-2)}
+.side-note li{margin-bottom:7px}
+.side-note ul{padding-left:18px;margin:0}
+.fact-list{list-style:none;margin:0;padding:0;font-size:13px;color:var(--ink-2)}
+.fact-list li{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line)}
+.fact-list li:last-child{border-bottom:0}
+.fact-list b{color:var(--ink)}
+
+/* 页尾 */
+.site-foot{background:var(--ink);color:#cfcbdd;margin-top:44px;padding:40px 0 24px;font-size:14px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
+.foot-brand{display:flex;align-items:center;gap:9px;color:#fff;font-weight:800;font-size:17px;margin-bottom:10px}
+.foot-pos{font-size:13.5px;color:#a5a0bb;max-width:280px;margin:0 0 14px}
+.foot-col h4{font-size:14px;color:#fff;margin-bottom:10px;letter-spacing:.5px}
+.foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.foot-col a{text-decoration:none;color:#a5a0bb;font-size:13.5px}
+.foot-col a:hover{color:#f2b134}
+.foot-note{border-top:1px solid #2f2c47;margin-top:26px;padding-top:16px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;font-size:12.5px;color:#87829f}
+.foot-note p{margin:0}
+.demo-note{font-size:12.5px;color:#87829f;line-height:1.7;margin:10px 0 0}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;
+  border:0;background:var(--red);color:#fff;font-size:20px;cursor:pointer;box-shadow:0 4px 14px rgba(197,59,40,.4);
+  opacity:0;pointer-events:none;transition:opacity .25s ease,transform .2s ease;z-index:70;
+}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-3px)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+@media (max-width:960px){
+  .layout-main{grid-template-columns:1fr}
+  .sidebar{position:static;grid-template-columns:1fr 1fr;order:2}
+  .hero-grid{grid-template-columns:1fr;gap:20px}
+  .hero-art{height:230px}
+  .pick-grid{grid-template-columns:repeat(2,1fr)}
+  .overview-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .poll-grid{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  :root{--head-h:56px}
+  .nav-toggle{display:block}
+  .main-nav{
+    display:none;position:absolute;left:0;right:0;top:var(--head-h);background:var(--bg);
+    border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:8px 16px 14px;gap:2px;
+    box-shadow:0 10px 18px rgba(27,26,46,.08);
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{padding:10px 8px;font-size:15px}
+  .head-entry{margin-left:0;display:none}
+  .site-head .wrap{position:relative}
+  .hero-stats{gap:16px}
+  .hero-stats b{font-size:19px}
+  .overview-grid,.pick-grid,.news-grid{grid-template-columns:1fr}
+  .sidebar{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .compare .a{border-right:0;border-bottom:1px solid var(--line)}
+  .deep{padding:20px 18px}
+  .foot-grid{grid-template-columns:1fr;gap:20px}
+  #toTop{width:40px;height:40px;right:12px;bottom:14px}
+  .annbar a{display:none}
+  .sec{padding:26px 0}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="annbar">
+    <div class="wrap">
+      <b>分区公告</b>
+      <span>11 月 6 日「一区·重剪单元」上新 4 条，版本号 K-17 与 K-19 的对照表已放出</span>
+      <a href="/#update">查看更新</a>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/#hero" aria-label="极品反差一区 首页">
+        <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1b1a2e"/>
+          <circle cx="24" cy="32" r="12" fill="#e8503a"/>
+          <circle cx="40" cy="32" r="12" fill="#f2b134" fill-opacity=".85"/>
+        </svg>
+        <span class="brand-name">极品反差一区</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">分区概览</a>
+        <a href="/#picks">精选条目</a>
+        <a href="/#update">更新记录</a>
+        <a href="/#cats">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+      </nav>
+      <a class="head-entry" href="/#interact">参与投票</a>
+    </div>
+  </header>
+</div>
+
+<main>
+  <!-- 首屏 -->
+  <section class="hero" id="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">强反差题材 · 分区观察</span>
+        <h1>极品反差一区</h1>
+        <p class="hero-desc">把<em>“强度”与“克制”</em>放在同一个镜头里，是这类条目最常被讨论的地方。这里记录分区怎么划、版本怎么对、创作者说过什么，以及哪些说法经得起逐帧核对。</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="/#picks">浏览精选条目</a>
+          <a class="btn btn-ghost" href="/#deep">读深度解析</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>12</b>个内容频道</div>
+          <div><b>47</b>条已核对版本</div>
+          <div><b>6</b>位常驻创作者</div>
+          <div><b>11.08</b>数据截止</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 300" role="img">
+          <defs>
+            <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e8503a" stop-opacity=".92"/>
+              <stop offset="1" stop-color="#c53b28" stop-opacity=".55"/>
+            </linearGradient>
+            <linearGradient id="gB" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#1f6f6b"/>
+              <stop offset="1" stop-color="#2a8a84"/>
+            </linearGradient>
+          </defs>
+          <rect x="10" y="20" width="380" height="260" rx="18" fill="#ece7dd"/>
+          <circle cx="128" cy="150" r="86" fill="url(#gA)"/>
+          <rect x="196" y="52" width="164" height="196" rx="14" fill="url(#gB)"/>
+          <path d="M204 150 L352 150 M278 58 L278 242" stroke="#fff" stroke-opacity=".35" stroke-width="2"/>
+          <rect x="222" y="182" width="112" height="10" rx="5" fill="#fff" fill-opacity=".5"/>
+          <rect x="222" y="202" width="78" height="10" rx="5" fill="#fff" fill-opacity=".35"/>
+          <circle cx="278" cy="108" r="26" fill="none" stroke="#fff" stroke-opacity=".65" stroke-width="3"/>
+          <path d="M270 108 L286 108 M278 100 L278 116" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+          <rect x="34" y="224" width="110" height="8" rx="4" fill="#1b1a2e" fill-opacity=".55"/>
+          <rect x="34" y="240" width="72" height="8" rx="4" fill="#1b1a2e" fill-opacity=".35"/>
+        </svg>
+        <span class="caption-note">左：强度侧 / 右：克制侧 —— 两组素材的裁剪示意</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="layout-main">
+      <div> <!-- 主内容 -->
+        <!-- 领域概览 -->
+        <section class="sec" id="overview">
+          <div class="sec-head">
+            <h2>反差向条目都在看什么</h2>
+            <span class="sub">从形态到判断口径</span>
+          </div>
+          <div class="overview-grid">
+            <article class="ov-card">
+              <span class="tag">形态</span>
+              <h3>强度型成片与留白型成片</h3>
+              <p>前者靠剪辑密度推进，单条 3—6 分钟；后者把镜头停在空处，常到 9 分钟以上。11 月 3 日分区表把两者分入一区、二区，依据是成片形态而非题材热度。</p>
+            </article>
+            <article class="ov-card">
+              <span class="tag">口径</span>
+              <h3>“未删减”指黑场与署名条</h3>
+              <p>维护组 10 月 28 日补充说明：片头保留 8 秒完整黑场、片尾带剪辑师英文署名的版本，才在条目页标“未删减”，其余标“重剪”。</p>
+            </article>
+            <article class="ov-card">
+              <span class="tag">难点</span>
+              <h3>同素材交叉挂载让版本对不齐</h3>
+              <p>《冷启动·上下》在一区、二区都有入口，两个版本相差 5 分 28 秒。只看标题容易误判，得比对时长与旁白段数。</p>
+            </article>
+            <article class="ov-card">
+              <span class="tag">人物</span>
+              <h3>剪辑署名 K-17 与 K-19</h3>
+              <p>两位常驻剪辑师风格差异明显：K-17 偏好硬切，K-19 保留呼吸感。10 月 14 日与 11 月 1 日的两版重剪都出自 K-17。</p>
+            </article>
+            <article class="ov-card">
+              <span class="tag">规则</span>
+              <h3>时长超过 20 分钟另设单元</h3>
+              <p>《静场》以 22 分 08 秒进入长片单元，评论仅 6 条，讨论外流到社群。长片条目在站内的互动天然偏低。</p>
+            </article>
+            <article class="ov-card">
+              <span class="tag">边界</span>
+              <h3>推测与事实分栏记录</h3>
+              <p>条目页把“已确认”“创作者回应”“社群转述”“待验证推测”四类分开标注，避免把二次转述当成原始说法。</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 精选内容推荐 -->
+        <section class="sec" id="picks">
+          <div class="sec-head">
+            <h2>精选条目推荐</h2>
+            <span class="sub">按版本可核对程度排序</span>
+            <a class="more" href="/#update">看全部更新</a>
+          </div>
+          <div class="pick-grid">
+            <article class="pick">
+              <img src="https://picsum.photos/seed/fanchai-01/560/300" width="560" height="300" loading="lazy" alt="冷色走廊场景，用于示意《冷启动》一区版本的走廊长镜头" style="object-fit:cover">
+              <div class="pick-body">
+                <h3>《冷启动·上下》一区版 4 分 12 秒</h3>
+                <p>10 月 22 日上线，剪辑署名 K-19。二区版多出三段旁白，总长 9 分 40 秒。两版片尾水印位置不同，可作核对锚点。</p>
+                <div class="meta"><span>版本 <b>K-19-3</b></span><span>核对于 11-06</span></div>
+              </div>
+            </article>
+            <article class="pick">
+              <img src="https://picsum.photos/seed/fanchai-02/560/300" width="560" height="300" loading="lazy" alt="窗外雨天与室内桌面对比，用于示意《静场》留白型长片" style="object-fit:cover">
+              <div class="pick-body">
+                <h3>《静场》长片单元 22 分 08 秒</h3>
+                <p>11 月 5 日播放量 3.2 万、评论 6 条。全片 41 个固定机位，最长一个镜头 2 分 37 秒，节奏与一区多数条目完全不同。</p>
+                <div class="meta"><span>长片单元</span><span>讨论外流社群</span></div>
+              </div>
+            </article>
+            <article class="pick">
+              <img src="https://picsum.photos/seed/fanchai-03/560/300" width="560" height="300" loading="lazy" alt="旧胶片质感的手部特写，用于示意《旧镜片》重剪版" style="object-fit:cover">
+              <div class="pick-body">
+                <h3>《旧镜片》11 月 1 日重剪版</h3>
+                <p>与 10 月 14 日首版相比缩短 51 秒，删掉两段过场。K-17 在片尾加了一行“第 2 剪”字样，时长 5 分 46 秒。</p>
+                <div class="meta"><span>重剪第 <b>2</b> 版</span><span>署名 K-17</span></div>
+              </div>
+            </article>
+            <article class="pick">
+              <img src="https://picsum.photos/seed/fanchai-04/560/300" width="560" height="300" loading="lazy" alt="地铁站台灯光，用于示意《换乘》交叉挂载版本" style="object-fit:cover">
+              <div class="pick-body">
+                <h3>《换乘》二区实验短篇</h3>
+                <p>11 月 2 日上线，6 分 04 秒，用 3 段倒序拼接。创作者在简介里写明“非成片”，并附 12 秒未使用的备用镜头。</p>
+                <div class="meta"><span>实验短篇</span><span>附备用镜头</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 最新更新 -->
+        <section class="sec" id="update">
+          <div class="sec-head">
+            <h2>本周更新记录</h2>
+            <span class="sub">11 月 1 日至 11 月 8 日</span>
+          </div>
+          <ul class="up-list">
+            <li><time>今天 08:40</time><span>《补白》重剪第 3 版入库，时长由 7 分 20 秒改为 6 分 51 秒</span><em>K-17</em></li>
+            <li><time>昨天 21:15</time><span>一区·重剪单元新增 4 条，含《旧镜片》《换乘》带时间码注释</span><em>维护组</em></li>
+            <li><time>11-06 17:02</time><span>发布 K-17 与 K-19 版本对照表，共 47 条已核对</span><em>核对组</em></li>
+            <li><time>11-05 20:47</time><span>《静场》进入长片单元，片头黑场由 3 秒补至 8 秒</span><em>长片单元</em></li>
+            <li><time>11-04 11:30</time><span>二区实验短篇板块新增“非成片”标注规则</span><em>规则补充</em></li>
+            <li><time>11-03 09:10</time><span>分区表第 7 版公布，明确按成片形态划分一区与二区</span><em>维护组</em></li>
+            <li><time>11-01 14:26</time><span>《旧镜片》重剪版上线，缩短 51 秒并加“第 2 剪”字样</span><em>K-17</em></li>
+            <li><time>10-28 16:00</time><span>补充“未删减”判定口径：8 秒黑场加英文署名条</span><em>维护组</em></li>
+            <li><time>10-22 22:18</time><span>《冷启动·上下》双分区挂载，一区版 4 分 12 秒</span><em>K-19</em></li>
+          </ul>
+        </section>
+
+        <!-- 分类入口 -->
+        <section class="sec" id="cats">
+          <div class="sec-head">
+            <h2>按题材与形态找条目</h2>
+            <span class="sub">12 个频道</span>
+          </div>
+          <div class="tag-index">
+            <a href="/#picks">强度型剪辑<b>98</b></a>
+            <a href="/#picks">留白长镜头<b>41</b></a>
+            <a href="/#picks">重剪版本对照<b>47</b></a>
+            <a href="/#picks">未删减黑场<b>26</b></a>
+            <a href="/#picks">实验短篇<b>18</b></a>
+            <a href="/#picks">倒序拼接<b>12</b></a>
+            <a href="/#picks">交叉挂载<b>9</b></a>
+            <a href="/#picks">长片单元<b>14</b></a>
+            <a href="/#deep">版本号溯源<b>33</b></a>
+            <a href="/#deep">剪辑师风格<b>21</b></a>
+            <a href="/#faq">署名条核查<b>16</b></a>
+            <a href="/#interact">社群讨论回声<b>28</b></a>
+          </div>
+        </section>
+
+        <!-- 深度解析 -->
+        <section class="sec" id="deep">
+          <div class="sec-head">
+            <h2>深度解析</h2>
+            <span class="sub">一个可被反驳的判断</span>
+          </div>
+          <div class="deep">
+            <p class="lead">判断：在强反差题材里，“时长更长 = 内容更完整”在 2026 年下半年已经失效。至少 3 组对照数据显示，长出来的部分更多是旁白与空镜，而非有效信息。</p>
+
+            <h3>证据一：两组同素材版本的正片占比</h3>
+            <p>《冷启动·上下》一区版 4 分 12 秒，二区版 9 分 40 秒，相差 5 分 28 秒。按 11 月 6 日核对组拆条表，多出的部分包含 3 段旁白（合计 3 分 02 秒）、2 段空镜（1 分 40 秒）和 1 段片尾字幕（46 秒）。正片镜头数没变，都是 37 个。这条能直接反驳“长版信息更多”的直觉：镜头数相同，只是被拉长了。</p>
+            <div class="compare">
+              <div class="a"><span class="ch a">一区版 4:12</span><br>镜头 37 个；旁白 0 段；片尾 12 秒</div>
+              <div class="b"><span class="ch b">二区版 9:40</span><br>镜头 37 个；旁白 3 段共 3:02；片尾 46 秒</div>
+            </div>
+
+            <h3>证据二：重剪第 2 版的删减方向</h3>
+            <p>《旧镜片》10 月 14 日首版 6 分 37 秒，11 月 1 日重剪版 5 分 46 秒，缩短 51 秒。K-17 在片尾标注“第 2 剪”，删掉的是两段过场，保留全部 5 个核心镜头。删减之后，条目页的“有效信息密度”标注从 2 级升到 3 级，这是版本更新里少见的反向调整。</p>
+            <ul>
+              <li>10-14 首版：6:37，过场 2 段，信息密度 2 级</li>
+              <li>11-01 重剪：5:46，过场 0 段，信息密度 3 级</li>
+              <li>两版片尾水印分别位于右下与左下，可作肉眼核对</li>
+            </ul>
+
+            <h3>证据三：长片单元的低互动并不等于低质量</h3>
+            <p>《静场》22 分 08 秒，11 月 5 日播放 3.2 万，评论 6 条。把它归入“失败”是误读。长片单元的分发逻辑与一区不同，讨论集中在外部社群，站内评论区没有承接。11 月 5 日当天，该条目在社群的讨论帖有 74 条回复，其中 31 条在讨论第 17 分钟的一个固定机位是否多余——这类具体讨论在站内看不到。</p>
+            <div class="quote-card">
+              “第 17 分钟那个机位停了 2 分 37 秒，我数了三遍，前 90 秒没有人，后 67 秒才有人进来。这段到底算留白还是算事故？”
+              <cite>—— 社群讨论帖，11 月 5 日，回复编号 22</cite>
+            </div>
+
+            <h3>可核对的结构：四类信息如何分层</h3>
+            <p>把说法拆开看，才能判断哪句能引用。10 月 22 日至 11 月 6 日之间，关于《冷启动》的讨论大致分四层：</p>
+            <ul>
+              <li>事实：两版时长 4:12 与 9:40，镜头数同为 37，有拆条表可查。</li>
+              <li>创作者回应：K-19 在 10 月 24 日简介里写“二区版是完整叙事”，未提旁白字数。</li>
+              <li>转述：社群把“完整叙事”转成“一区版是删减版”，与原话有偏差。</li>
+              <li>推测：有人根据片尾水印位置推断二区版先剪，但两版署名时间都在 10 月 20 日，无法据此排序。</li>
+            </ul>
+            <p>反驳这个判断的办法也很直接：如果后续出现镜头数增加、时长同步增加的重剪版，且新增镜头承载新信息，那么“长≠完整”就不成立。截至 11 月 8 日，47 条已核对版本里还没有这样的反例。</p>
+          </div>
+        </section>
+
+        <!-- 体验指南 -->
+        <section class="sec" id="guide">
+          <div class="sec-head">
+            <h2>条目核对体验指南</h2>
+            <span class="sub">五步走完一条</span>
+          </div>
+          <ol class="steps">
+            <li>
+              <h3>先看时长与版本号</h3>
+              <p>同名条目先对时长。一区版普遍 3—6 分钟，二区版常超 9 分钟。版本号形如 K-17-3，末位是第几剪。</p>
+            </li>
+            <li>
+              <h3>再查片头黑场秒数</h3>
+              <p>标“未删减”的应保留 8 秒黑场。计时器从片头第一帧开始，3 秒内进正片的按“重剪”处理。</p>
+            </li>
+            <li>
+              <h3>对照片尾署名条</h3>
+              <p>英文署名条是第二道锚点。K-17 习惯放右下，K-19 放左下，位置与署名应一致，错位多半是二次压制。</p>
+            </li>
+            <li>
+              <h3>拆条看旁白段数</h3>
+              <p>参与讨论前，先数旁白。3 段旁白对应二区完整叙事版，0 段对应一区强度版，段数对不上就别引用时长结论。</p>
+            </li>
+            <li>
+              <h3>最后决定是否入社群</h3>
+              <p>《静场》这类长片，站内评论少但社群讨论密。想看清争议，去社群翻 11 月 5 日那串 74 条回复更快。</p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- FAQ -->
+        <section class="sec faq" id="faq">
+          <div class="sec-head">
+            <h2>常见问题</h2>
+            <span class="sub">按提问频次排列</span>
+          </div>
+          <details>
+            <summary>反差向条目里的“一区”“二区”到底怎么分？</summary>
+            <div class="ans"><p>按 11 月 3 日维护组公布的分区表，一区收强度高、剪辑密度大的成片，二区放花絮、未剪素材和实验性短篇。分区依据是成片形态，不是题材热度。</p></div>
+          </details>
+          <details>
+            <summary>同一组素材为什么会在两个分区同时出现？</summary>
+            <div class="ans"><p>合辑条目允许交叉挂载。10 月 22 日上线的《冷启动·上下》就同时挂在一区和二区，区别是一区版本 4 分 12 秒，二区版本 9 分 40 秒，多出三段旁白。</p></div>
+          </details>
+          <details>
+            <summary>条目页标注的“重剪版”可信吗？</summary>
+            <div class="ans"><p>看版本号与剪辑署名。署名“K-17”的重剪版在 10 月 14 日、11 月 1 日各有一版，两版时长相差 51 秒，片尾水印位置也不同，能对上才可信。</p></div>
+          </details>
+          <details>
+            <summary>为什么有的条目播放量高却没有评论？</summary>
+            <div class="ans"><p>多见于题材偏门或时长超过 20 分钟的条目。11 月 5 日的《静场》播放量 3.2 万，评论 6 条，因为讨论集中在外部社群，站内评论区没有承接。</p></div>
+          </details>
+          <details>
+            <summary>创作者标注的“未删减”要怎样核对？</summary>
+            <div class="ans"><p>对比片头 8 秒的黑场时长和片尾署名条。删减版一般黑场 3 秒内，未删减版保留 8 秒完整黑场，并带剪辑师英文署名。</p></div>
+          </details>
+          <details>
+            <summary>K-17 和 K-19 的剪辑差别在哪？</summary>
+            <div class="ans"><p>K-17 偏好硬切，删除过场；K-19 保留呼吸感，旁白与空镜更多。把《旧镜片》和《冷启动》放一起看，35 秒内能感到差异。</p></div>
+          </details>
+        </section>
+
+        <!-- 用户评论 -->
+        <section class="sec" id="comments">
+          <div class="sec-head">
+            <h2>条目下的真实反馈</h2>
+            <span class="sub">含中性评价与吐槽</span>
+          </div>
+          <div class="comments">
+            <div class="cmt">
+              <div class="cmt-top"><span class="ava">林</span><span class="who">林间有雾</span><span class="star">★★★★☆</span><span class="when">11-07</span></div>
+              <p>《冷启动》二区版那段 3 分 02 秒的旁白，第二段提到“走廊是一镜到底”，但我回看一区版，走廊明显有两次切点。旁白和画面得对上再说。</p>
+            </div>
+            <div class="cmt">
+              <div class="cmt-top"><span class="ava">刀</span><span class="who">刀口向里</span><span class="star">★★★☆☆</span><span class="when">11-06</span></div>
+              <p>《旧镜片》重剪第 2 版删掉的两段过场里，有一段是我唯一觉得有意思的。信息密度是升了，可看性降了，这种取舍没写在简介里。</p>
+            </div>
+            <div class="cmt">
+              <div class="cmt-top"><span class="ava">阿</span><span class="who">阿蓝蓝</span><span class="star">★★★★★</span><span class="when">11-05</span></div>
+              <p>《静场》第 17 分钟的固定机位我看了三遍。前 90 秒有人影掠过窗，后 67 秒才有人进来。这段留着是对的，删了整条就轻了。</p>
+            </div>
+            <div class="cmt">
+              <div class="cmt-top"><span class="ava">老</span><span class="who">老排</span><span class="star">★★☆☆☆</span><span class="when">11-05</span></div>
+              <p>版本号 K-19-3 的“3”到底指第几剪，条目页没写清楚。问了两次都让去看对照表，对照表又只到 K-19-2。这种信息缺口挺影响判断。</p>
+            </div>
+            <div class="cmt">
+              <div class="cmt-top"><span class="ava">夜</span><span class="who">夜班车厢</span><span class="star">★★★☆☆</span><span class="when">11-04</span></div>
+              <p>《换乘》算实验短篇里诚实的，简介直接写“非成片”。倒序三段拼得有点乱，但附的 12 秒备用镜头是全片最稳的。</p>
+            </div>
+            <div class="cmt">
+              <div class="cmt-top"><span class="ava">S</span><span class="who">Sora 不睡</span><span class="star">★★★★☆</span><span class="when">11-03</span></div>
+              <p>分区表第 7 版把“按成片形态”写明了，之前按热度分确实容易吵架。这次改动是往清晰方向走的，接受。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 相关资讯 -->
+        <section class="sec" id="news">
+          <div class="sec-head">
+            <h2>相关资讯</h2>
+            <span class="sub">只报事实层</span>
+          </div>
+          <div class="news-grid">
+            <article class="news">
+              <time>11-06 17:02</time>
+              <h3>版本对照表扩充至 47 条</h3>
+              <p>核对组新增 9 条记录，包括《补白》三版与《旧镜片》两版。每条标时长、署名、黑场秒数与镜头数，可逐项比对。</p>
+            </article>
+            <article class="news">
+              <time>11-05 20:47</time>
+              <h3>《静场》补足 8 秒黑场后进长片单元</h3>
+              <p>原片黑场 3 秒，补足后满足“未删减”口径。播放量 3.2 万，评论 6 条，社群讨论 74 条回复，集中在第 17 分钟。</p>
+            </article>
+            <article class="news">
+              <time>11-04 11:30</time>
+              <h3>二区给实验短篇加“非成片”标注</h3>
+              <p>规则补充后，实验短篇简介需自行注明“非成片”或“成片前素材”，并附备用镜头时长。《换乘》是首批执行条目之一。</p>
+            </article>
+            <article class="news">
+              <time>11-03 09:10</time>
+              <h3>分区表第 7 版：按形态而非热度</h3>
+              <p>维护组明确一区收强度型成片，二区放花絮与实验短篇。交叉挂载条目需在简介里标明两版时长差，避免误引。</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 榜单 -->
+        <section class="sec" id="rank">
+          <div class="sec-head">
+            <h2>可核对程度榜</h2>
+            <span class="sub">截至 11 月 8 日</span>
+          </div>
+          <ol class="rank">
+            <li><span class="rk-name">《冷启动·上下》</span><span class="rk-meta">双版本 · 拆条表齐全</span></li>
+            <li><span class="rk-name">《旧镜片》</span><span class="rk-meta">重剪两版 · 时长差 51 秒</span></li>
+            <li><span class="rk-name">《补白》</span><span class="rk-meta">三版 · 第 3 版 6:51</span></li>
+            <li><span class="rk-name">《换乘》</span><span class="rk-meta">非成片标注 · 附备用镜头</span></li>
+            <li><span class="rk-name">《静场》</span><span class="rk-meta">长片单元 · 社群讨论密</span></li>
+            <li><span class="rk-name">《窄门》</span><span class="rk-meta">单版 · 署名条未核</span></li>
+          </ol>
+        </section>
+
+        <!-- 时间线 -->
+        <section class="sec" id="timeline">
+          <div class="sec-head">
+            <h2>分区规则变化时间线</h2>
+            <span class="sub">三次调整</span>
+          </div>
+          <ul class="timeline">
+            <li><time>10-28</time><b>补“未删减”判定口径</b>8 秒黑场加英文署名条，删减版黑场 3 秒内。</li>
+            <li><time>11-03</time><b>分区表第 7 版</b>按成片形态划分一区、二区，交叉挂载须标时长差。</li>
+            <li><time>11-04</time><b>实验短篇标注规则</b>非成片须自行注明，并附备用镜头时长。</li>
+          </ul>
+        </section>
+
+        <!-- 用户互动 -->
+        <section class="sec" id="interact">
+          <div class="sec-head">
+            <h2>参与：你更在意哪一层</h2>
+            <span class="sub">投票与条目提名</span>
+          </div>
+          <div class="poll-grid">
+            <div class="poll">
+              <h3>核对一条时，你最想先看到什么</h3>
+              <div class="poll-opt" id="pollOpts">
+                <button type="button" data-v="time"><span>时长与版本号</span><i class="bar"></i></button>
+                <button type="button" data-v="black"><span>片头黑场秒数</span><i class="bar"></i></button>
+                <button type="button" data-v="credit"><span>片尾剪辑署名</span><i class="bar"></i></button>
+                <button type="button" data-v="voice"><span>旁白段数与出处</span><i class="bar"></i></button>
+              </div>
+              <p class="poll-hint" id="pollHint">点一次即计票，结果仅在本机统计。</p>
+            </div>
+            <div class="submit-box">
+              <h3>提名一条想核对的条目</h3>
+              <form id="nominateForm">
+                <label for="nTitle">条目标题</label>
+                <input id="nTitle" name="title" type="text" placeholder="例如：窄门 11 月版" required>
+                <label for="nWhy">想核对什么</label>
+                <textarea id="nWhy" name="why" placeholder="例如：片尾署名条位置和 K-17 习惯不一致"></textarea>
+                <button type="submit">提交提名</button>
+                <p class="form-msg" id="formMsg" role="status"></p>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- 相关推荐 -->
+        <section class="sec" id="rec">
+          <div class="sec-head">
+            <h2>相关推荐</h2>
+            <span class="sub">顺着具体词往下找</span>
+          </div>
+          <div class="rec-tags">
+            <a href="/#deep">冷启动上下两个版本</a>
+            <a href="/#picks">旧镜片重剪第 2 版</a>
+            <a href="/#picks">静场 22 分 08 秒</a>
+            <a href="/#news">补白第 3 版 6 分 51 秒</a>
+            <a href="/#guide">片头 8 秒黑场</a>
+            <a href="/#faq">K-17 与 K-19 风格差</a>
+            <a href="/#comments">换乘备用镜头</a>
+            <a href="/#rank">可核对程度榜</a>
+          </div>
+        </section>
+      </div>
+
+      <!-- 侧栏 -->
+      <aside class="sidebar" id="sidebar" aria-label="辅助导航与检索">
+        <div class="side-box">
+          <h3>站内查找条目</h3>
+          <div class="side-search">
+            <input id="q" type="search" placeholder="输入条目标题或剪辑署名" aria-label="查找条目标题或剪辑署名">
+            <button id="qBtn" type="button">查找</button>
+          </div>
+          <p class="search-result" id="qRes" role="status">试试“冷启动”“静场”或“K-17”。</p>
+        </div>
+        <div class="side-box">
+          <h3>栏目速览</h3>
+          <ul class="side-nav" id="sideNav">
+            <li><a href="/#overview">分区概览</a></li>
+            <li><a href="/#picks">精选条目</a></li>
+            <li><a href="/#update">更新记录</a></li>
+            <li><a href="/#cats">分类入口</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comments">条目反馈</a></li>
+            <li><a href="/#rank">可核对榜单</a></li>
+            <li><a href="/#interact">参与提名</a></li>
+          </ul>
+        </div>
+        <div class="side-box">
+          <h3>关键数据</h3>
+          <ul class="fact-list">
+            <li><span>已核对版本</span><b>47</b></li>
+            <li><span>最长条目</span><b>22:08</b></li>
+            <li><span>最短条目</span><b>3:04</b></li>
+            <li><span>常驻剪辑</span><b>K-17 / K-19</b></li>
+            <li><span>分区表版本</span><b>第 7 版</b></li>
+          </ul>
+        </div>
+        <div class="side-box side-note">
+          <h3>核对提醒</h3>
+          <ul>
+            <li>黑场计时从第一帧起算，含片头静帧。</li>
+            <li>交叉挂载条目先看两版时长差。</li>
+            <li>“未删减”需 8 秒黑场与英文署名条同时满足。</li>
+            <li>社群转述不等于创作者原话。</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#f2b134"/>
+            <circle cx="24" cy="32" r="12" fill="#1b1a2e"/>
+            <circle cx="40" cy="32" r="12" fill="#e8503a"/>
+          </svg>
+          极品反差一区
+        </div>
+        <p class="foot-pos">在一区与二区之间分辨成片、花絮与实验短篇，用版本号、黑场与署名条把说法落到可查的细节上。</p>
+        <p class="demo-note">站内条目、播放量、评论数与版本记录均为示例数据，用于展示信息结构，不对应任何实际平台内容。</p>
+      </div>
+      <div class="foot-col">
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="/#picks">强度型剪辑</a></li>
+          <li><a href="/#picks">留白长镜头</a></li>
+          <li><a href="/#update">重剪版本对照</a></li>
+          <li><a href="/#picks">未删减黑场</a></li>
+          <li><a href="/#picks">实验短篇</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>核对栏目</h4>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#rank">可核对程度榜</a></li>
+          <li><a href="/#timeline">规则时间线</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>参与</h4>
+        <ul>
+          <li><a href="/#interact">核对优先级投票</a></li>
+          <li><a href="/#interact">提名词条</a></li>
+          <li><a href="/#comments">条目反馈</a></li>
+          <li><a href="/#rec">相关推荐</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p>页面可见内容更新至 2026-11-08，对应正文更新记录与时间线段落。</p>
+      <p>© 2026 极品反差一区 · 内容观察示例站</p>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  // 移动菜单
+  var toggle=document.getElementById('navToggle');
+  var nav=document.getElementById('mainNav');
+  if(toggle&&nav){
+    toggle.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=720){
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // 回到顶部
+  var toTop=document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY>420){toTop.classList.add('show');}
+    else{toTop.classList.remove('show');}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  // 本地搜索
+  var idx=[
+    {t:'冷启动·上下 一区版 4:12 / 二区版 9:40',id:'picks'},
+    {t:'静场 长片单元 22:08',id:'picks'},
+    {t:'旧镜片 重剪第 2 版 5:46 K-17',id:'picks'},
+    {t:'换乘 实验短篇 6:04 非成片',id:'picks'},
+    {t:'补白 重剪第 3 版 6:51 K-17',id:'update'},
+    {t:'窄门 单版 署名未核',id:'rank'},
+    {t:'K-19 剪辑署名 一区版',id:'deep'},
+    {t:'片头 8 秒黑场 未删减口径',id:'guide'},
+    {t:'分区表 第 7 版',id:'timeline'},
+    {t:'版本对照表 47 条',id:'update'}
+  ];
+  var q=document.getElementById('q');
+  var qBtn=document.getElementById('qBtn');
+  var qRes=document.getElementById('qRes');
+  function doSearch(){
+    var kw=(q.value||'').trim().toLowerCase();
+    if(!kw){qRes.innerHTML='试试“冷启动”“静场”或“K-17”。';return;}
+    var hits=idx.filter(function(x){return x.t.toLowerCase().indexOf(kw)>-1;});
+    if(hits.length===0){
+      qRes.innerHTML='没有找到与“<b>'+escapeHtml(q.value.trim())+'</b>”相关的条目，换个标题词或剪辑署名再试。';
+      return;
+    }
+    qRes.innerHTML='找到 '+hits.length+' 条：'+hits.map(function(h){
+      return '<a href="/#'+h.id+'" style="color:#1f6f6b;text-decoration:underline">'+escapeHtml(h.t)+'</a>';
+    }).join('；');
+  }
+  function escapeHtml(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  if(qBtn){qBtn.addEventListener('click',doSearch);}
+  if(q){q.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();doSearch();}});}
+
+  // 侧栏滚动高亮
+  var links=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var secs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(2));});
+  function highlight(){
+    var pos=window.scrollY+160,cur=-1;
+    for(var i=0;i<secs.length;i++){
+      if(secs[i]&&secs[i].offsetTop<=pos){cur=i;}
+    }
+    links.forEach(function(a,i){a.classList.toggle('active',i===cur);});
+  }
+  window.addEventListener('scroll',highlight,{passive:true});
+  highlight();
+
+  // 投票
+  var votes={time:0,black:0,credit:0,voice:0};
+  var opts=document.getElementById('pollOpts');
+  var hint=document.getElementById('pollHint');
+  if(opts){
+    opts.addEventListener('click',function(e){
+      var btn=e.target.closest('button');
+      if(!btn)return;
+      var v=btn.getAttribute('data-v');
+      votes[v]=(votes[v]||0)+1;
+      var total=Object.keys(votes).reduce(function(s,k){return s+votes[k];},0);
+      Array.prototype.forEach.call(opts.querySelectorAll('button'),function(b){
+        var k=b.getAttribute('data-v');
+        var pct=total?Math.round(votes[k]/total*100):0;
+        b.querySelector('.bar').style.width=pct+'%';
+        b.setAttribute('aria-label',b.textContent.trim()+' 当前 '+pct+'%');
+      });
+      hint.textContent='已记录：'+btn.textContent.trim()+'。本机共 '+total+' 次投票。';
+    });
+  }
+
+  // 提名表单
+  var form=document.getElementById('nominateForm');
+  var msg=document.getElementById('formMsg');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var t=document.getElementById('nTitle').value.trim();
+      if(!t){msg.textContent='请先填条目标题。';msg.style.color='#c53b28';return;}
+      msg.textContent='已记录提名《'+t+'》，核对组会在下一版对照表里处理。';
+      msg.style.color='#1f6f6b';
+      form.reset();
+    });
+  }
+})();
+</script>
+</body>
+                  </html>
